@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  thread-count="3" parallel='classes' >
+	<listeners>
+		<listener class-name="Utils.ExtentReportManager"></listener>
+	</listeners>
+  <test  name="Test">
+    <classes>
+      <class name="TestCases.TC001_VerifyLogin"/>  
+      <!--class name="TestCases.TC002_VerifyLogout"/>-->
+      <class name="TestCases.TC003_VerifyCreateLead"/>
+      <class name="TestCases.TC004_VerifyviewLeads"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
